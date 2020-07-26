@@ -12,6 +12,7 @@ using Random = UnityEngine.Random;
 
 public class ImageLoader : MonoBehaviour
 {
+    [SerializeField] private string dirRoot;
     [SerializeField] private string imageDir;
     [SerializeField] private Transform container;
     [SerializeField] private GameObject imagePrefab;
@@ -20,7 +21,7 @@ public class ImageLoader : MonoBehaviour
     private int _imageCount;
     void Start()
     {
-        var imageDirPath = Path.Combine(Application.streamingAssetsPath, imageDir);
+        var imageDirPath = Path.Combine(dirRoot, imageDir);
         var imageUrls = Directory.GetFiles(imageDirPath, "*.jpg");
         _imageCount = imageUrls.Length;
         

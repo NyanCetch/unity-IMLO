@@ -1273,11 +1273,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471cde0e9a541634a9d6e2570d8bca22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageDir: 2k
+  dirRoot: D:\UnityProjects\Images
+  imageDir: 5k
   container: {fileID: 672739424}
   imagePrefab: {fileID: 714672802972882350, guid: 5b5d67fb1a9fd04449bdb14b000bc731,
     type: 3}
-  loadDelay: 0.3
+  loadDelay: 0
 --- !u!4 &1697241416
 Transform:
   m_ObjectHideFlags: 0
